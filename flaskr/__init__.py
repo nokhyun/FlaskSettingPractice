@@ -26,6 +26,5 @@ def create_app(test_config=None):
         return 'Hello, World!'
 
     from . import auth
-    app.register_blueprintO(auth.app)
-
+    app.register_blueprint(auth.bp)
     return app
